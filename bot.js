@@ -34,7 +34,7 @@
 
 });
 
-await s4d.client.login('OTc5NTE3MDIyNzM4MTk4NjE4.GR8VEy.XrVZxQyv1D0gYWaFwz7Z_VsxrjTpJItga4bdQo').catch((e) => { s4d.tokenInvalid = true; s4d.tokenError = e; });
+await s4d.client.login(proccess.env.token).catch((e) => { s4d.tokenInvalid = true; s4d.tokenError = e; });
 
 s4d.client.on('messageCreate', async (s4dmessage) => {
   if ((s4dmessage.content) == 'lol') {

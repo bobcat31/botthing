@@ -1,4 +1,5 @@
-(async () => {
+
+(async () => {    
   const Discord = require("discord.js");
   const Database = require("easy-json-database");
   const devMode = typeof __E_IS_DEV !== "undefined" && __E_IS_DEV;
